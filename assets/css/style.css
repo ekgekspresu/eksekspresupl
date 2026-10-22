@@ -38,4 +38,4 @@ footer .footer-bottom{grid-column:1/-1;display:flex;flex-direction:row;align-ite
 footer .footer-bottom small{border:0;padding:0}
 
 /* Zdjęcie na stronie O mnie */
-.story .portrait-photo{display:block;width:100%;height:auto;min-height:0;align-self:start}
+.story .portrait-photo{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center 30%;min-height:0;align-self:start}
