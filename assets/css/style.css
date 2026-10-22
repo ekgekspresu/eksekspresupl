@@ -59,3 +59,12 @@ footer .footer-bottom small{border:0;padding:0}
 .carousel button:focus-visible,.carousel:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(min-width:901px) and (max-width:1200px){header nav{gap:.55rem}header nav a{font-size:.75rem}}
 @media(max-width:560px){.carousel{padding:0 6vw 4rem}.carousel-slide{height:420px;max-height:65vh}.carousel-arrow{width:40px;height:44px}.carousel-prev{left:.5rem}.carousel-next{right:.5rem}.carousel-thumb{flex-basis:80px;height:62px}}
+
+/* Osobne realizacje z niezależnymi karuzelami */
+.projects{max-width:1240px;margin:auto;padding:0 5vw 6rem}
+.project+.project{border-top:1px solid var(--line);padding-top:4rem;margin-top:4rem}
+.project-heading{max-width:760px;margin-bottom:2rem}
+.project-heading h2{font-size:clamp(2rem,4vw,3rem)}
+.project-heading>p:last-child{color:var(--muted)}
+.project .carousel{padding:0;max-width:none}
+@media(max-width:900px){.projects{padding-left:6vw;padding-right:6vw}}

@@ -1,6 +1,5 @@
 (() => {
-  const gallery = document.querySelector('.carousel');
-  if (!gallery) return;
+  document.querySelectorAll('.carousel').forEach(gallery => {
   const slides = [...gallery.querySelectorAll('.carousel-slide')];
   const thumbs = [...gallery.querySelectorAll('.carousel-thumb')];
   let current = 0;
@@ -38,4 +37,5 @@
     start = null;
   }, { passive: true });
   show(0);
+  });
 })();
