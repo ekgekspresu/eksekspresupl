@@ -70,5 +70,5 @@ footer .footer-bottom small{border:0;padding:0}
 @media(max-width:900px){.projects{padding-left:6vw;padding-right:6vw}}
 
 /* Mniejszy odstęp między nagłówkiem a treścią podstron */
-.subhero{padding-top:3rem}
-@media(max-width:560px){.subhero{padding-top:2rem}}
+.subhero{padding:2rem 3vw}
+@media(max-width:560px){.subhero{padding:1.5rem 4vw}}
