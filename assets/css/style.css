@@ -39,3 +39,14 @@ footer .footer-bottom small{border:0;padding:0}
 
 /* Zdjęcie na stronie O mnie */
 .story .portrait-photo{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center 30%;min-height:0;align-self:start}
+
+/* Galeria zdjęć */
+.photo-gallery{max-width:1240px;margin:0 auto;padding:0 5vw 7rem;columns:3;column-gap:1.5rem}
+.photo-card{display:block;break-inside:avoid;margin-bottom:1.5rem;overflow:hidden;background:var(--cream);border:2px solid var(--ink)}
+.photo-card img{display:block;width:100%;height:auto;transition:transform .2s}
+.photo-card:hover img{transform:scale(1.025)}
+.photo-card:focus-visible{outline:4px solid var(--accent);outline-offset:4px}
+@media(min-width:901px) and (max-width:1200px){header nav{gap:.55rem}header nav a{font-size:.75rem}}
+@media(max-width:900px){.photo-gallery{columns:2;padding-left:6vw;padding-right:6vw}}
+@media(max-width:560px){.photo-gallery{columns:1;padding-bottom:4.5rem}}
+@media(prefers-reduced-motion:reduce){.photo-card img{transition:none}}
