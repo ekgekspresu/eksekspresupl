@@ -40,13 +40,22 @@ footer .footer-bottom small{border:0;padding:0}
 /* Zdjęcie na stronie O mnie */
 .story .portrait-photo{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center 30%;min-height:0;align-self:start}
 
-/* Galeria zdjęć */
-.photo-gallery{max-width:1240px;margin:0 auto;padding:0 5vw 7rem;columns:3;column-gap:1.5rem}
-.photo-card{display:block;break-inside:avoid;margin-bottom:1.5rem;overflow:hidden;background:var(--cream);border:2px solid var(--ink)}
-.photo-card img{display:block;width:100%;height:auto;transition:transform .2s}
-.photo-card:hover img{transform:scale(1.025)}
-.photo-card:focus-visible{outline:4px solid var(--accent);outline-offset:4px}
+/* Karuzela zdjęć */
+.carousel{max-width:1240px;margin:0 auto;padding:0 5vw 6rem}
+.carousel-stage{position:relative;background:#171717;border:2px solid var(--ink)}
+.carousel-slide{margin:0;height:clamp(320px,55vw,650px)}
+.carousel-slide[hidden]{display:none}
+.carousel-slide img{display:block;width:100%;height:100%;object-fit:contain}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:2px solid var(--ink);background:var(--yellow);color:var(--ink);font:400 2.5rem/1 system-ui;cursor:pointer;display:grid;place-items:center}
+.carousel-prev{left:1rem}.carousel-next{right:1rem}
+.carousel-arrow:hover{background:white}
+.carousel-meta{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin:1rem 0 1.5rem;font-size:.9rem}
+.carousel-count{white-space:nowrap;font-weight:700;color:var(--accent)}
+.carousel-thumbs{display:flex;gap:.75rem;overflow-x:auto;padding:4px 4px 12px}
+.carousel-thumb{flex:0 0 110px;height:80px;padding:0;border:3px solid transparent;opacity:.6;background:var(--ink);cursor:pointer}
+.carousel-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.carousel-thumb[aria-pressed="true"]{border-color:var(--accent);opacity:1}
+.carousel-thumb:hover{opacity:1}
+.carousel button:focus-visible,.carousel:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(min-width:901px) and (max-width:1200px){header nav{gap:.55rem}header nav a{font-size:.75rem}}
-@media(max-width:900px){.photo-gallery{columns:2;padding-left:6vw;padding-right:6vw}}
-@media(max-width:560px){.photo-gallery{columns:1;padding-bottom:4.5rem}}
-@media(prefers-reduced-motion:reduce){.photo-card img{transition:none}}
+@media(max-width:560px){.carousel{padding:0 6vw 4rem}.carousel-slide{height:420px;max-height:65vh}.carousel-arrow{width:40px;height:44px}.carousel-prev{left:.5rem}.carousel-next{right:.5rem}.carousel-thumb{flex-basis:80px;height:62px}}
