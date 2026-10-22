@@ -72,3 +72,7 @@ footer .footer-bottom small{border:0;padding:0}
 /* Mniejszy odstęp między nagłówkiem a treścią podstron */
 .subhero{padding:2rem 3vw}
 @media(max-width:560px){.subhero{padding:1.5rem 4vw}}
+
+/* Mniejsze paddingi sekcji dwukolumnowych */
+.twocol{padding:2rem 3vw}
+@media(max-width:560px){.twocol{padding:1.5rem 4vw}}
