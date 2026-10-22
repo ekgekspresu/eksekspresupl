@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ekgekspresu.pl/sitemap.xml
